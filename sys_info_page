@@ -1,6 +1,6 @@
 #!/bin/bash
 # Program to output a system information page
-
+# This is a test
 TITLE="System Information Report For $HOSTNAME"
 CURRENT_TIME="$(date +"%x %r %Z")"
 TIMESTAMP="Generated $CURRENT_TIME, by $USER"
