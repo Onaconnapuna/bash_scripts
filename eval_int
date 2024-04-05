@@ -2,7 +2,8 @@
 
 # test-integer: evalute the value of an integer
 
-INT=4
+echo -n "Please enter an integer -> "
+read INT
 
 if [[ "$INT" =~ ^-?[0-9]+$ ]]; then 
 
