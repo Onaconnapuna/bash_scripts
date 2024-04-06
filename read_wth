@@ -1,7 +1,10 @@
 #!/bin/bash
 
-#read-single: read multiple values into default variable
+#read-secret: input a secret passphrase 
 
-read -p "Enter one or more values > "
-echo "REPLY = '$REPLY'"
-
+if read -t 10 -sp "Enter secret passphrase > "  secret_pass; then 
+	echo -e "\nSecret passphrase = '$secret_pass'"
+else 
+	echo -e "\nInput timed out" >&2
+	exit 1
+fi 
